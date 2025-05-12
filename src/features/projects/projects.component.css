@@ -1,0 +1,18 @@
+/* Hover effects for project cards */
+.bg-gray-900:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Center align text for better readability */
+.text-center {
+  text-align: center;
+}

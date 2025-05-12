@@ -1,0 +1,78 @@
+<footer class="fixed bottom-4 left-0 right-0 mx-auto w-[95%] max-w-md bg-white/20 backdrop-blur-lg text-white rounded-full p-3 flex justify-around items-center shadow-2xl z-50 md:hidden border border-white/30">
+    <!-- Home -->
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('home')"
+    >
+        <lucide-icon [img]="Icons.Home" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">Home</span>
+    </div>
+
+    <!-- About -->
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('about')"
+    >
+        <lucide-icon [img]="Icons.User" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">About</span>
+    </div>
+
+    <!-- Projects -->
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('projects')"
+    >
+        <lucide-icon [img]="Icons.Briefcase" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">Projects</span>
+    </div>
+
+    <!-- Testimonials -->
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('testimonials')"
+    >
+        <lucide-icon [img]="Icons.Star" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">Exp</span>
+    </div>
+
+    <!-- Contact -->
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('contact')"
+    >
+        <lucide-icon [img]="Icons.Mail" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">Contact</span>
+    </div>
+</footer>
+
+<style>
+  /* Ensure the footer floats with a nice animation */
+  footer {
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .glow-teal {
+    filter: drop-shadow(0 0 3px rgba(45, 212, 191, 0.7));
+  }
+
+  /* Ensure the footer is visible on all browsers and doesn't get hidden */
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    footer {
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+    }
+  }
+</style>

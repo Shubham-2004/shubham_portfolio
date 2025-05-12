@@ -1,0 +1,33 @@
+/* Glow effect for icons */
+.glow-teal {
+  filter: drop-shadow(0 0 8px #5eead4);
+  transition: filter 0.3s ease;
+}
+
+.flex-col:hover .glow-teal {
+  filter: drop-shadow(0 0 12px #5eead4);
+}
+
+/* iPhone floating effect */
+footer {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: none;
+  }
+}

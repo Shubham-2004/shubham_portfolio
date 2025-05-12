@@ -1,0 +1,15 @@
+/* Glow effects */
+.glow-orange {
+  text-shadow: 0 0 8px rgba(251, 146, 60, 0.7); /* Orange glow */
+}
+
+.glow-teal {
+  text-shadow: 0 0 8px rgba(45, 212, 191, 0.7); /* Teal glow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .md:flex-row {
+    flex-direction: column;
+  }
+}
