@@ -1,4 +1,4 @@
-<footer class="fixed bottom-4 left-0 right-0 mx-auto w-[95%] max-w-md bg-white/20 backdrop-blur-lg text-white rounded-full p-3 flex justify-around items-center shadow-2xl z-50 md:hidden border border-white/30">
+<footer class="fixed bottom-4 left-0 right-0 mx-auto w-[95%] max-w-md bg-black/20 backdrop-blur-lg text-white rounded-full p-3 flex justify-around items-center shadow-2xl z-50 md:hidden border border-white/30">
     <!-- Home -->
     <div 
         class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
@@ -17,6 +17,14 @@
         <span class="text-[10px] mt-1 text-teal-300">About</span>
     </div>
 
+    <div 
+        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
+        (click)="navigateTo('testimonials')"
+    >
+        <lucide-icon [img]="Icons.Star" size="20" color="white" class="glow-teal" />
+        <span class="text-[10px] mt-1 text-teal-300">Exp</span>
+    </div>
+
     <!-- Projects -->
     <div 
         class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
@@ -27,13 +35,7 @@
     </div>
 
     <!-- Testimonials -->
-    <div 
-        class="flex flex-col items-center hover:scale-110 transition-transform cursor-pointer" 
-        (click)="navigateTo('testimonials')"
-    >
-        <lucide-icon [img]="Icons.Star" size="20" color="white" class="glow-teal" />
-        <span class="text-[10px] mt-1 text-teal-300">Exp</span>
-    </div>
+    
 
     <!-- Contact -->
     <div 
